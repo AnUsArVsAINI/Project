@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Function to calculate grade based on percentage
+
 char calculateGrade(float percentage) {
     if (percentage >= 90)
         return 'A';
@@ -20,14 +20,14 @@ int main() {
     float marks[5], total = 0, percentage;
     char grade;
 
-    // Input student details
+  
     printf("Enter student's name: ");
     fgets(name, sizeof(name), stdin);
 
     printf("Enter roll number: ");
     scanf("%d", &rollNo);
 
-    // Input marks for each subject
+   
     printf("Enter marks for English: ");
     scanf("%f", &marks[0]);
 
@@ -43,18 +43,18 @@ int main() {
     printf("Enter marks for SST (Social Science): ");
     scanf("%f", &marks[4]);
 
-    // Calculate total marks
+   
     for (int i = 0; i < 5; i++) {
         total += marks[i];
     }
 
-    // Calculate percentage
+    
     percentage = (total / 500) * 100;
 
-    // Calculate grade
+   
     grade = calculateGrade(percentage);
 
-    // Display the grade card
+
     printf("\n--- Grade Card ---\n");
     printf("Name: %s", name);
     printf("Roll No: %d\n", rollNo);
